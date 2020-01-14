@@ -15,10 +15,10 @@ export default class ColoredScrollbars extends Component {
         this.setState({ top });
     }
 
-
-
     renderThumb({ style, ...props }) {
+
         const { top } = this.state;
+
         const thumbStyle = {
             backgroundColor: `rgba(5, 49, 84, 0.9)`,
         };
@@ -36,7 +36,8 @@ export default class ColoredScrollbars extends Component {
                 renderThumbHorizontal={this.renderThumb}
                 renderThumbVertical={this.renderThumb}
                 onUpdate={this.handleUpdate}
-                {...this.props}/>
+                {...this.props}
+            />
         );
     }
 }

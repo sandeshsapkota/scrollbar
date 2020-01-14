@@ -38,10 +38,10 @@
 }
 
 .sidebar > div > div:last-child{
-    background: rgba(85, 157, 214, .8);
-    right: auto !important;
-    left: -8px;
-}
+     background: rgba(85, 157, 214, .8);
+     right: auto !important;
+     left: -8px;
+ }
 
 .sidebar > div{
     overflow: initial !important;
