@@ -1,29 +1,28 @@
 .sidebar {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  /* overflow: auto; */
-  width: 22%;
-  border-left: 1px solid rgba(240, 248, 255, 0.2);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    /* overflow: auto; */
+    width: 22%;
+    border-left: 1px solid rgba(240, 248, 255, 0.2);
 }
 
 .sidebar-item {
-  color: #ffffff;
-  display: block;
-  font-size: 24px;
-  padding: 40px 24px;
-  text-transform: capitalize;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(240, 248, 255, 0.2);
+    color: #ffffff;
+    display: block;
+    font-size: 24px;
+    padding: 40px 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.2);
 }
 
 .sidebar-item:hover {
-  background-color: #0a416de6;
+    background-color: #0a416de6;
 }
 
-
-.content{
+.content {
     box-shadow: rgba(1, 73, 131, 0.9) 0px 2px 40px 0px;
     background: rgba(240, 248, 255, 0.9);
     border-radius: 8px;
@@ -33,16 +32,32 @@
     line-height: 1.7;
 }
 
-.panel-content-custom {
-    max-height: 525px;
+
+
+.scrollarea {
+    height: 100%;
 }
 
-.sidebar > div > div:last-child{
-     background: rgba(85, 157, 214, .8);
-     right: auto !important;
-     left: -8px;
- }
 
-.sidebar > div{
-    overflow: initial !important;
+#root .vertical {
+    background: rgba(238, 238, 255, .5);
+    right: auto;
+    left: 0;
+    opacity: 1;
+    transition: .3s background-color linear;
+}
+
+#root .scrollarea:hover .vertical{
+    background: rgba(238, 238, 255, .8);
+}
+
+#root .scrollbar {
+    margin-left: 0;
+    width: 100%;
+    background: rgba(0, 54, 97,.8);
+    transition: .3s background-color linear;
+}
+
+#root .scrollarea:hover .scrollbar {
+    background: rgba(0, 0, 0,.9);
 }
